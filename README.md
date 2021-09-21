@@ -5,5 +5,4 @@ Repositorio para el primer proyecto del curso de Arquitectura de Información
 Compositor.json
 
 # Entidades Secundarias
-Album.json
-Pelicula.json
+Album.json y Pelicula.json
