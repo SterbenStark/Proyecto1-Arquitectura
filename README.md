@@ -4,6 +4,6 @@ Repositorio para el primer proyecto del curso de Arquitectura de Información
 # Entidad Principal
 Compositor.json
 
-#Entidades Secundarias
+# Entidades Secundarias
 Album.json
 Pelicula.json
