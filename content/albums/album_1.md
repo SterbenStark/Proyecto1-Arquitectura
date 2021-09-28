@@ -1,7 +1,7 @@
 ---
 id: album_1
 name: Despicable Me 2
-authorId: album_4
+authorId: author_4
 year: 2013
 number_songs: 24
 image: /static/images/albums/album_1.png

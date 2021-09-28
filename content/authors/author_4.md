@@ -7,7 +7,7 @@ nationality: American
 birth_year: 1973
 fields:
   - Database Systems
-image: /static/images/authors/author_4.jpg
+image: authors/author_4.jpg
 year: 2013
 ---
 
