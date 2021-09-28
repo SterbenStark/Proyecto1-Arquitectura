@@ -22,6 +22,7 @@ collections:
            media_folder: '/static/images/authors'}
       - {label: "Body", name: "body", widget: "markdown"}
 
+      #propiedades de album: id, name, compositor, year, number_songs
   - name: "albums"
     label: "Albums"
     folder: "content/albums"
