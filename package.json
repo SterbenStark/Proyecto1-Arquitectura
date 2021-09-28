@@ -1,8 +1,8 @@
 {
-  "name": "Proyecto1",
+  "name": "Tutorial_04",
   "version": "1.0.0",
   "description": "Nuxt starter for CodeSandBox",
-  "author": "Miguel Díaz & Miltonn Gómez",
+  "author": "Miguel Diaz & Milton Gomez",
   "private": true,
   "scripts": {
     "dev": "MINIMAL=1 nuxt",
