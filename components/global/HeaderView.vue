@@ -4,5 +4,6 @@
       <NuxtLink class="three columns button button-primary" to="/books_index">Books</NuxtLink>
       <NuxtLink class="three columns button button-primary" to="/authors_index">Authors</NuxtLink>
       <NuxtLink class="three columns button button-primary" to="/publishers_index">Publishers</NuxtLink>
+      <NuxtLink class="three columns button button-primary" to="/albums_index">Albums</NuxtLink>
     </div>
 </template>
