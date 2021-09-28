@@ -1,0 +1,44 @@
+[
+  {
+    "name": "authors_index",
+    "path": "/authors_index",
+    "component": "D:\\\\UNA\\\\Licenciatura\\\\Arquitectura de informacion\\\\Proyecto\\\\Proyecto1-Arquitectura\\\\pages\\\\authors_index.vue",
+    "chunkName": "pages/authors_index"
+  },
+  {
+    "name": "books_index",
+    "path": "/books_index",
+    "component": "D:\\\\UNA\\\\Licenciatura\\\\Arquitectura de informacion\\\\Proyecto\\\\Proyecto1-Arquitectura\\\\pages\\\\books_index.vue",
+    "chunkName": "pages/books_index"
+  },
+  {
+    "name": "publishers_index",
+    "path": "/publishers_index",
+    "component": "D:\\\\UNA\\\\Licenciatura\\\\Arquitectura de informacion\\\\Proyecto\\\\Proyecto1-Arquitectura\\\\pages\\\\publishers_index.vue",
+    "chunkName": "pages/publishers_index"
+  },
+  {
+    "name": "authors-slug",
+    "path": "/authors/:slug?",
+    "component": "D:\\\\UNA\\\\Licenciatura\\\\Arquitectura de informacion\\\\Proyecto\\\\Proyecto1-Arquitectura\\\\pages\\\\authors\\\\_slug.vue",
+    "chunkName": "pages/authors/_slug"
+  },
+  {
+    "name": "books-slug",
+    "path": "/books/:slug?",
+    "component": "D:\\\\UNA\\\\Licenciatura\\\\Arquitectura de informacion\\\\Proyecto\\\\Proyecto1-Arquitectura\\\\pages\\\\books\\\\_slug.vue",
+    "chunkName": "pages/books/_slug"
+  },
+  {
+    "name": "publishers-slug",
+    "path": "/publishers/:slug?",
+    "component": "D:\\\\UNA\\\\Licenciatura\\\\Arquitectura de informacion\\\\Proyecto\\\\Proyecto1-Arquitectura\\\\pages\\\\publishers\\\\_slug.vue",
+    "chunkName": "pages/publishers/_slug"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\UNA\\\\Licenciatura\\\\Arquitectura de informacion\\\\Proyecto\\\\Proyecto1-Arquitectura\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
