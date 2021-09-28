@@ -1,0 +1,14 @@
+{
+  "FooterView": {
+    "description": "Auto imported from components/global/FooterView.vue"
+  },
+  "LazyFooterView": {
+    "description": "Auto imported from components/global/FooterView.vue"
+  },
+  "HeaderView": {
+    "description": "Auto imported from components/global/HeaderView.vue"
+  },
+  "LazyHeaderView": {
+    "description": "Auto imported from components/global/HeaderView.vue"
+  }
+}
