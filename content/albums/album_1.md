@@ -1,7 +1,6 @@
 ---
 id: album_1
 name: Despicable Me 2
-compositorId: author_1
 authorId: author_1
 year: 2013
 number_songs: 24

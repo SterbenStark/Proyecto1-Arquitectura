@@ -7,7 +7,6 @@ nationality: American
 fields:
   - Database Systems
 image: authors/author_1.jpg
-compositorId: author_1
 year: 2013
 birth_year: 1973
 ---
