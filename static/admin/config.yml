@@ -36,7 +36,7 @@ collections:
       - {label: "Year", name: "year", widget: "number"}
       - {label: "Number_songs", name: "number_songs", widget: "number"}
       - {label: "Image", name: "image", widget: "image",
-           media_folder: '/static/images/authors'}
+           media_folder: '/static/images/albums'}
       - {label: "Body", name: "body", widget: "markdown"}
 
   #propiedades de compositor: id, name, nationality, birth_year, number_songs
