@@ -31,7 +31,7 @@ collections:
       - {label: "Id", name: "id", widget: "hidden", default: "album_{{hour}}{{minute}}{{second}}"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "compositor", name: "compositorId", widget: "relation",
-          collection: "authors", search_fields: ["name"], value_field: "id",
+          collection: "compositors", search_fields: ["name"], value_field: "id",
           display_fields: ["name"]}
       - {label: "Year", name: "year", widget: "number"}
       - {label: "Number_songs", name: "number_songs", widget: "number"}
