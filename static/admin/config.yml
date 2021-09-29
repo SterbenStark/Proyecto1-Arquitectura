@@ -72,6 +72,9 @@ collections:
       - {label: "Genere", name: "genere", widget: "select", multiple: true,
          options: ["Familiar", "Animación", "Terror",
           "Ciencia Ficción","Aventura","Comedia","Suspenso","Live Action"]}
+      - {label: "album", name: "albumId", widget: "relation",
+          collection: "albums", search_fields: ["name"], value_field: "id",
+          display_fields: ["name"]}
       - {label: "Image", name: "image", widget: "image",
            media_folder: '/static/images/peliculas'}
       - {label: "Body", name: "body", widget: "markdown"}
