@@ -1,9 +1,9 @@
 <script>
   export default {
     async asyncData({ $content, params }) {
-      const compositores = await $content('albums').fetch()
+      const compositors = await $content('albums').fetch()
       return {
-        albums
+        compositors
       }
     }
   }
@@ -12,7 +12,7 @@
 <template>
   <div class="container">
    <HeaderView />
-   <h3 style="margin-top: 15px">Albums Information</h3>
+   <h3 style="margin-top: 15px">compositors Information</h3>
      <p>This section presents information about albums</p>
    <ul>
      <li v-for="album of albums" :key="album.slug">
