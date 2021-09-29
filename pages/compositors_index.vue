@@ -15,8 +15,8 @@
    <h3 style="margin-top: 15px">compositors Information</h3>
      <p>This section presents information about albums</p>
    <ul>
-     <li v-for="album of albums" :key="album.slug">
-       <NuxtLink :to="{ name: 'albums-slug', params: { slug: album.slug } }">{{album.name}}</NuxtLink>
+     <li v-for="compositor of compositors" :key="compositor.slug">
+       <NuxtLink :to="{ name: 'albums-slug', params: { slug: compositor.slug } }">{{compositor.name}}</NuxtLink>
      </li>
    </ul>
    <FooterView />
