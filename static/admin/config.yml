@@ -22,7 +22,7 @@ collections:
            media_folder: '/static/images/authors'}
       - {label: "Body", name: "body", widget: "markdown"}
 
-      #propiedades de album: id, name, compositor, year, number_songs
+  #propiedades de album: id, name, compositor, year, number_songs
   - name: "albums"
     label: "Albums"
     folder: "content/albums"
@@ -30,13 +30,30 @@ collections:
     fields:
       - {label: "Id", name: "id", widget: "hidden", default: "album_{{hour}}{{minute}}{{second}}"}
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "compositor", name: "authorId", widget: "relation",
+      - {label: "compositor", name: "compositorId", widget: "relation",
           collection: "authors", search_fields: ["name"], value_field: "id",
           display_fields: ["name"]}
       - {label: "Year", name: "year", widget: "number"}
       - {label: "Number_songs", name: "number_songs", widget: "number"}
       - {label: "Image", name: "image", widget: "image",
            media_folder: '/static/images/authors'}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  #propiedades de compositor: id, name, nationality, birth_year, number_songs
+  - name: "compositors"
+    label: "Compositors"
+    folder: "content/compositors"
+    create: true
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", default: "compositor_{{hour}}{{minute}}{{second}}"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Nationality", name: "nationality", widget: "string"}
+      - {label: "Birth_year", name: "birth_year", widget: "number"}
+      - {label: "Fields", name: "fields", widget: "select", multiple: true,
+         options: ["Happy song", "Mi villano Favorito", "You're the one that i want",
+          "Alvin y las ardillas","Aventura","Married Life","Sing","Pantera"]}
+      - {label: "Image", name: "image", widget: "image",
+           media_folder: '/static/images/compositors'}
       - {label: "Body", name: "body", widget: "markdown"}
     
   - name: "publishers"
@@ -53,6 +70,7 @@ collections:
       - {label: "Image", name: "image", widget: "image",
            media_folder: '/static/images/publishers'}
       - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "books"
     label: "Books"
     folder: "content/books"
