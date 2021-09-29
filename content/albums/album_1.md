@@ -4,6 +4,7 @@ name: Despicable Me 2
 compositorId: compositor_1
 year: 2013
 number_songs: 24
+duration: 1 hora y 1 minuto
 image: albums/album_1.jpg
 ---
 

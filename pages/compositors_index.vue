@@ -12,7 +12,7 @@
 <template>
   <div class="container">
    <HeaderView />
-   <h3 style="margin-top: 15px">compositors Information</h3>
+   <h3 style="margin-top: 15px">Compositors Information</h3>
      <p>This section presents information about the Compositors</p>
    <ul>
      <li v-for="compositor of compositors" :key="compositor.slug">

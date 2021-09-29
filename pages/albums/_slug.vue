@@ -17,8 +17,10 @@
      </div>
      <div class="six columns">
        <h4>{{album.name}}</h4>
-	   Compositor <NuxtLink :to="'/compositors/'+album.compositorId">{{compositor[0].name}}</NuxtLink></br>
-     Album Year: {{album.year}}; Number of Songs: {{album.number_songs}}; </br></br>
+	   Compositor: <NuxtLink :to="'/compositors/'+album.compositorId">{{compositor[0].name}}</NuxtLink></br>
+     Año del album: {{album.year}}.</br> 
+     Número de canciones: {{album.number_songs}}. 
+     Duración del album: {{album.duration}}.</br></br>
 	   <b>Description</b></br>
 	    <nuxt-content :document="album" />
 	 </div>

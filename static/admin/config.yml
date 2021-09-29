@@ -22,7 +22,7 @@ collections:
            media_folder: '/static/images/authors'}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  #propiedades de album: id, name, compositor, year, number_songs
+  #propiedades de album: id, name, compositor, year, number_songs, duration
   - name: "albums"
     label: "Albums"
     folder: "content/albums"
@@ -35,6 +35,7 @@ collections:
           display_fields: ["name"]}
       - {label: "Year", name: "year", widget: "number"}
       - {label: "Number_songs", name: "number_songs", widget: "number"}
+      - {label: "Duration", name: "duration", widget: "string"}
       - {label: "Image", name: "image", widget: "image",
            media_folder: '/static/images/albums'}
       - {label: "Body", name: "body", widget: "markdown"}
