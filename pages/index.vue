@@ -7,8 +7,8 @@
       <br><br>
       Se podrá visualizar información de entidades principales tales como: Compositores, Albunes y Películas.</p>
     <ul>
-	  <li> <NuxtLink to="/books_index">Información de compositores</NuxtLink></li>
-	  <li> <NuxtLink to="/authors_index">Información de albunes</NuxtLink></li>
+	  <li> <NuxtLink to="/authors_index">Información de compositores</NuxtLink></li>
+	  <li> <NuxtLink to="/albums_index">Información de albunes</NuxtLink></li>
 	  <li> <NuxtLink to="/publishers_index">Información de películas</NuxtLink></li>
 	</ul>
    <FooterView />

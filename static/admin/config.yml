@@ -55,7 +55,26 @@ collections:
       - {label: "Image", name: "image", widget: "image",
            media_folder: '/static/images/compositors'}
       - {label: "Body", name: "body", widget: "markdown"}
-    
+  
+  #propiedades de pelicula: id, name, direction, country, year, duration, genere      
+  - name: "peliculas"
+    label: "Peliculas"
+    folder: "content/peliculas"
+    create: true
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", default: "pelicula_{{hour}}{{minute}}{{second}}"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Direction", name: "direction", widget: "string"}
+      - {label: "Country", name: "country", widget: "string"}
+      - {label: "Year", name: "year", widget: "number"}
+      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Genere", name: "genere", widget: "select", multiple: true,
+         options: ["Familiar", "Animación", "Terror",
+          "Ciencia Ficción","Aventura","Comedia","Suspenso","Live Action"]}
+      - {label: "Image", name: "image", widget: "image",
+           media_folder: '/static/images/peliculas'}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "publishers"
     label: "Publishers"
     folder: "content/publishers"
