@@ -3,7 +3,7 @@
       <NuxtLink class="three columns button button-primary" to="/">Home</NuxtLink>
       <NuxtLink class="three columns button button-primary" to="/books_index">Books</NuxtLink>
       <NuxtLink class="three columns button button-primary" to="/compositors_index">Compositores</NuxtLink>
-      <NuxtLink class="three columns button button-primary" to="/publishers_index">Publishers</NuxtLink>
+      <!--<NuxtLink class="three columns button button-primary" to="/publishers_index">Publishers</NuxtLink>-->
       <NuxtLink class="three columns button button-primary" to="/albums_index">Albums</NuxtLink>
       
     </div>
