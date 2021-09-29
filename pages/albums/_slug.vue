@@ -1,9 +1,9 @@
 <script>
   export default {
     async asyncData({ $content, params }) {
-      const compositor = await $content('compositors', params.slug).fetch()
-      const albums = await $content('albums').where({ compositorId: params.slug }).fetch()
-      return { compositor, albums }
+      const album = await $content('albums', params.slug).fetch()
+      const compositor = await $content('compositors').where({ id: album.compositorId }).only(['name']).fetch()
+      return { compositor, album }
     }
   }
 </script>
@@ -13,22 +13,16 @@
    <HeaderView />
    <div class="row">
      <div class="three columns">
-       <img class="u-max-full-width" :src="'/images/'+compositor.image" alt="Italian Trulli">
+       <img class="u-max-full-width" :src="'/images/'+album.image" alt="Album image">
      </div>
      <div class="six columns">
-       <h4>{{compositor.name}}</h4>
-	   Nationality: {{compositor.nationality}}; Born: {{compositor.birth_year}}</br>
-	   Fields: {{compositor.fields}}</br></br>
-	   <b>Biography</b></br>
-	    <nuxt-content :document="compositor" />
+       <h4>{{album.name}}</h4>
+	   Compositor <NuxtLink :to="'/compositors/'+album.compositorId">{{compositor[0].name}}</NuxtLink></br>
+     Album Year: {{album.year}}; Number of Songs: {{album.number_songs}}; </br>
+	   <b>Description</b></br>
+	    <nuxt-content :document="album" />
 	 </div>
-	 <div class="three columns"></div>
-	   <h5>Albums</h5>
-	   <ul>
-	     <li v-for="album of albums" :key="album.slug">
-	       <NuxtLink :to="{ name: 'albums-slug', params: { slug: album.slug } }">{{album.name}}</NuxtLink>
-	     </li>
-	   </ul>
+	 <div class="two columns"></div>
    </div>
    <FooterView />
  </div>
