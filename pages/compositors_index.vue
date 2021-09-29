@@ -1,7 +1,7 @@
 <script>
   export default {
     async asyncData({ $content, params }) {
-      const compositors = await $content('albums').fetch()
+      const compositors = await $content('compositors').fetch()
       return {
         compositors
       }
