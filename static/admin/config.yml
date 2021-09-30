@@ -52,7 +52,7 @@ collections:
       - {label: "Birth_year", name: "birth_year", widget: "number"}
       - {label: "Fields", name: "fields", widget: "select", multiple: true,
          options: ["Happy song", "Mi villano Favorito", "You're the one that i want",
-          "Alvin y las ardillas","Aventura","Married Life","Sing","Pantera"]}
+          "Alvin y las ardillas","Aventura","Married Life","Sing","Pantera","Funk","Rock Electrónico"]}
       - {label: "Image", name: "image", widget: "image",
            media_folder: '/static/images/compositors'}
       - {label: "Body", name: "body", widget: "markdown"}
