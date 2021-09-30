@@ -2,7 +2,7 @@
   export default {
     async asyncData({ $content, params }) {
       const pelicula = await $content('peliculas', params.slug).fetch()
-      const albums = await $content('albums').where({ id: pelicula.albumId }).only(['name']).fetch()
+      const albums = await $content('albums').where({ albumId: params.slug }).fetch()
       return { albums, pelicula }
     }
   }
