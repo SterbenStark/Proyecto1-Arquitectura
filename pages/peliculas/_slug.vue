@@ -28,7 +28,7 @@
 	 <div class="three columns"></div>
 	   <h5>Album Asociado</h5>
 	   <ul>
-	     <li v-for="album of albums" :key="album.slug">
+	     <li v-for="album of album" :key="album.slug">
 	       <NuxtLink :to="{ name: 'albums-slug', params: { slug: album.slug } }">{{album.name}}</NuxtLink>
 	     </li>
 	   </ul>
