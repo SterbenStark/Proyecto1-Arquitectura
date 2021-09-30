@@ -2,8 +2,8 @@
   export default {
     async asyncData({ $content, params }) {
       const pelicula = await $content('peliculas', params.slug).fetch()
-      const album = await $content('albums').where({ id: pelicula.albumId }).only(['name']).fetch()
-      return { album, pelicula }
+      const albums = await $content('albums').where({ id: pelicula.albumId }).only(['name']).fetch()
+      return { albums, pelicula }
     }
   }
 </script>
@@ -28,7 +28,7 @@
 	 <div class="three columns"></div>
 	   <h5>Album Asociado</h5>
 	   <ul>
-	     <li v-for="album of album" :key="album.slug">
+	     <li v-for="album of albums" :key="album.slug">
 	       <NuxtLink :to="{ name: 'albums-slug', params: { slug: album.slug } }">{{album.name}}</NuxtLink>
 	     </li>
 	   </ul>
