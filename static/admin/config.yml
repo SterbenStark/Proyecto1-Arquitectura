@@ -71,7 +71,8 @@ collections:
       - {label: "Duration", name: "duration", widget: "string"}
       - {label: "Genere", name: "genere", widget: "select", multiple: true,
          options: ["Familiar", "Animación", "Terror",
-          "Ciencia Ficción","Aventura","Comedia","Suspenso","Live Action"]}
+          "Ciencia Ficción","Aventura","Comedia","Comedia Romantica",
+          "Musical","Suspenso","Super Heroes","Acción","Live Action"]}
       - {label: "album", name: "albumId", widget: "relation",
           collection: "albums", search_fields: ["name"], value_field: "id",
           display_fields: ["name"]}
