@@ -34,7 +34,7 @@
      <h5>Pelicula</h5>
 	   <ul>
        <li>
-          <NuxtLink :to="'/peliculas/'+compositor.peliculaId">{{albums[0].name}}</NuxtLink></br>
+          <NuxtLink :to="'/peliculas/'+compositor.peliculaId">{{pelicula[0].name}}</NuxtLink></br>
       </li>
    </div>
    <FooterView />
