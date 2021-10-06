@@ -30,13 +30,11 @@
 	     <li v-for="album of albums" :key="album.slug">
 	       <NuxtLink :to="{ name: 'albums-slug', params: { slug: album.slug } }">{{album.name}}</NuxtLink>
 	     </li>
-	   </ul>
-   </div>
-   <div class="three columns">
-	   <h5>Pelicula</h5>
+	   </ul></br>
+     <h5>Pelicula</h5>
 	   <ul>
        <li>
-          <NuxtLink :to="'/albums/'+compositor.peliculaId">{{albums[0].name}}</NuxtLink></br>
+          <NuxtLink :to="'/peliculas/'+compositor.peliculaId">{{albums[0].name}}</NuxtLink></br>
       </li>
    </div>
    <FooterView />
