@@ -21,7 +21,7 @@
      Año del album: {{album.year}}.</br> 
      Número de canciones: {{album.number_songs}}.</br> 
      Duración del album: {{album.duration}}.</br>
-     Ver está relacion (Album asociado a la pelicula): {{album.name}}.</br></br>
+     <!--Ver está relacion (Album asociado a la pelicula): {{album.name}}.</br></br>-->
 	   <b>Description</b></br>
 	    <nuxt-content :document="album" />
 	 </div>
