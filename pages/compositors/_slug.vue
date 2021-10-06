@@ -36,7 +36,7 @@
 	   <ul>
        <li>
           <li v-for="pelicula of peliculas" :key="pelicula.slug">
-            <NuxtLink :to="{ name: 'peliculas-slug', params: { slug: album.slug } }">{{pelicula.name}}</NuxtLink>
+            <NuxtLink :to="{ name: 'peliculas-slug', params: { slug: pelicula.slug } }">{{pelicula.name}}</NuxtLink>
           <!--<NuxtLink :to="'/peliculas/'+compositor.peliculaId">{{pelicula[0].name}}</NuxtLink></br>-->
       </li>
    </div>
