@@ -16,7 +16,7 @@
      <p>This section presents information about the Compositors</p>
    <ul>
      <li v-for="compositor of compositors" :key="compositor.slug">
-       <NuxtLink :to="{ name: 'albums-slug', params: { slug: compositor.slug } }">{{compositor.name}}</NuxtLink>
+       <NuxtLink :to="{ name: 'compositors-slug', params: { slug: compositor.slug } }">{{compositor.name}}</NuxtLink>
      </li>
    </ul>
    <FooterView />
