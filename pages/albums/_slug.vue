@@ -3,7 +3,7 @@
     async asyncData({ $content, params }) {
       const album = await $content('albums', params.slug).fetch()
       const compositor = await $content('compositors').where({ id: album.compositorId }).only(['name']).fetch()
-      const pelicula = await $content('peliculas').where({ id: album.peliculaId }).only(['name']).fetch()
+      const pelicula = await $content('peliculas').where({ id: pelicula.albumId }).only(['name']).fetch()
       return { compositor, album, pelicula }
     }
   }
