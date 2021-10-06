@@ -3,9 +3,12 @@ id: compositor_1
 name: Pharrell Williams
 nationality: Estados Unidos / American
 birth_year: 1973
-fields:
-  - Happy song
-  - Mi villano Favorito
+genere:
+  - Hip Hop
+  - Rap
+  - Funk
+albumId: album_1
+peliculaId: pelicula_1
 image: compositors/Pharrell.jpg
 ---
 

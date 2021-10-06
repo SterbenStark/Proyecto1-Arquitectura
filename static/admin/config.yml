@@ -50,9 +50,15 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Nationality", name: "nationality", widget: "string"}
       - {label: "Birth_year", name: "birth_year", widget: "number"}
-      - {label: "Fields", name: "fields", widget: "select", multiple: true,
-         options: ["Happy song", "Mi villano Favorito", "You're the one that i want",
-          "Alvin y las ardillas","Aventura","Married Life","Sing","Pantera","Funk","Rock Electrónico"]}
+      - {label: "Genere", name: "genere", widget: "select", multiple: true,
+         options: ["Rap","Hip Hop","Funk","Pop","Rock Electrónico","Rock and Roll","Retro","Rock","Reggae",
+         "Jazz","Soundtrack","Game Score","Country","R&B","House"]}
+      - {label: "album", name: "albumId", widget: "relation",
+          collection: "albums", search_fields: ["name"], value_field: "id",
+          display_fields: ["name"]}
+      - {label: "pelicula", name: "peliculaId", widget: "relation",
+          collection: "peliculas", search_fields: ["name"], value_field: "id",
+          display_fields: ["name"]}
       - {label: "Image", name: "image", widget: "image",
            media_folder: '/static/images/compositors'}
       - {label: "Body", name: "body", widget: "markdown"}

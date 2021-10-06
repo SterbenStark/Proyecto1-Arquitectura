@@ -3,9 +3,13 @@ id: compositor_7
 name: Daft Punk
 nationality: Frances
 birth_year: 1993
-fields:
+genere:
   - Funk
   - Rock Electrónico
+  - Pop
+  - House
+albumId: album_8
+peliculaId: pelicula_7
 image: compositors/Daft_Punk.jpg
 ---
 

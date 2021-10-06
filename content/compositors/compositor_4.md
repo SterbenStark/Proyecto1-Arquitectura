@@ -3,9 +3,12 @@ id: compositor_4
 name: Michael Giacchino
 nationality: Estados Unidos / American
 birth_year: 1967
-fields:
-  - Aventura
-  - Married Life
+genere:
+  - Jazz
+  - Soundtrack
+  - Game Score
+albumId: album_4
+peliculaId: pelicula_4
 image: compositors/Michael_Giacchino.jpg
 ---
 

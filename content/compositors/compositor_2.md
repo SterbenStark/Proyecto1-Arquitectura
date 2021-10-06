@@ -3,9 +3,11 @@ id: compositor_2
 name: John Travolta
 nationality: Estados Unidos / American
 birth_year: 1954
-fields:
-  - John Travolta
-  - You're the one that i want
+genere:
+  - Rock and Roll
+  - Retro
+albumId: album_2
+peliculaId: pelicula_2
 image: compositors/John_Travolta.jpg
 ---
 

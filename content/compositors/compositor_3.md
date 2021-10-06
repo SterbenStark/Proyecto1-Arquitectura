@@ -3,9 +3,14 @@ id: compositor_3
 name: Bruno Mars
 nationality: Estados Unidos / American
 birth_year: 1985
-fields:
-  - Bruno Mars
-  - Alvin y las ardillas
+genere:
+  - Funk
+  - Pop
+  - Hip Hop
+  - Rock
+  - Reggae
+albumId: album_3
+peliculaId: pelicula_3
 image: compositors/BrunoMars.jpg
 ---
 
