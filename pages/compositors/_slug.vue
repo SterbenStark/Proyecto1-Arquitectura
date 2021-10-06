@@ -3,8 +3,9 @@
     async asyncData({ $content, params }) {
       const compositor = await $content('compositors', params.slug).fetch()
       const albums = await $content('albums').where({ compositorId: params.slug }).fetch()
-      const pelicula = await $content('peliculas').where({ id: albums.albumId }).only(['name']).fetch()
-      return { compositor, albums, pelicula }
+      const peliculas = await $content('peliculas').where({albumId: params.slug }).fetch()
+      /**const pelicula = await $content('peliculas').where({ id: albums.albumId }).only(['name']).fetch()*/
+      return { compositor, albums, peliculas }
     }
   }
 </script>
@@ -34,7 +35,8 @@
      <h5>Pelicula</h5>
 	   <ul>
        <li>
-          <NuxtLink :to="'/peliculas/'+compositor.peliculaId">{{peliculas[0].name}}</NuxtLink></br>
+          <NuxtLink :to="{ name: 'peliculas-slug', params: { slug: album.slug } }">{{pelicula.name}}</NuxtLink>
+          <!--<NuxtLink :to="'/peliculas/'+compositor.peliculaId">{{pelicula[0].name}}</NuxtLink></br>-->
       </li>
    </div>
    <FooterView />
