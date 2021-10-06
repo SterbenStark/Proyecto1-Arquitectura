@@ -30,7 +30,7 @@
 	   <h5>Pelicula Asociada</h5>
 	   <ul>
        <li>
-          <NuxtLink :to="'/peliculas/'+album.peliculaId">{{pelicula[0].name}}</NuxtLink></br>
+          <NuxtLink :to="'/peliculas/'+pelicula.albumId">{{pelicula[0].name}}</NuxtLink></br>
       </li>
 	   </ul>
    </div>
