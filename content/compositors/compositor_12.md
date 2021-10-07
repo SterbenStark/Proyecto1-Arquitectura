@@ -6,7 +6,7 @@ birth_year: 1994
 genere:
   - Film Score
 albumId: album_13
-peliculaId: pelicula_11
+peliculaId: pelicula_12
 image: compositors/compositor_12.jpg
 ---
 
