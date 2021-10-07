@@ -36,7 +36,8 @@ collections:
       - {label: "Birth_year", name: "birth_year", widget: "number"}
       - {label: "Genere", name: "genere", widget: "select", multiple: true,
          options: ["Rap","Hip Hop","Funk","Pop","Rock Electrónico","Rock and Roll","Retro","Rock","Reggae",
-         "Jazz","Soundtrack","Game Score","Country","R&B","House"]}
+         "Jazz","Soundtrack","Game Score","Country","R&B","House","Reguetón","Dance","Trap","Musical","Romance",
+         "Erótico","Rap Metal","Nu Metal", "Rapcore","Film Score"]}
       - {label: "album", name: "albumId", widget: "relation",
           collection: "albums", search_fields: ["name"], value_field: "id",
           display_fields: ["name"]}
@@ -62,7 +63,7 @@ collections:
       - {label: "Genere", name: "genere", widget: "select", multiple: true,
          options: ["Familiar", "Animación", "Terror",
           "Ciencia Ficción","Aventura","Comedia","Comedia Romantica",
-          "Musical","Suspenso","Super Heroes","Acción","Live Action"]}
+          "Musical","Suspenso","Super Heroes","Acción","Live Action","Drama","Infantil"]}
       - {label: "album", name: "albumId", widget: "relation",
           collection: "albums", search_fields: ["name"], value_field: "id",
           display_fields: ["name"]}
